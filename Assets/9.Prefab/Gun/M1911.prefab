@@ -258,6 +258,7 @@ GameObject:
   - component: {fileID: 685656653173033154}
   - component: {fileID: 9122805342244574107}
   - component: {fileID: 3031718130900929060}
+  - component: {fileID: -8053948543847768380}
   m_Layer: 0
   m_Name: M1911
   m_TagString: Untagged
@@ -499,11 +500,27 @@ MonoBehaviour:
   _audioClip:
   - {fileID: 8300000, guid: f1f37efcb4177d54cac5ca99df1822fd, type: 3}
   - {fileID: 8300000, guid: 84b78ec63379b1c4a9734fdae56a3974, type: 3}
-  _gunInfo: {fileID: 11400000, guid: 75dc37f7f20f46a4fab0b52cec078054, type: 2}
   bullet: {fileID: 8393618778878023333, guid: 9d28742d7517d964db571ef376f523ec, type: 3}
   shootPoint: {fileID: 4398977437249689878}
   bulletCount: {fileID: 5312184686247538835}
   leftHand: {fileID: 0}
+--- !u!114 &-8053948543847768380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509269160459299381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df47c1c62184a1643a319ec194ada301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: {fileID: 0}
+  OffsetList:
+  - {fileID: 5262651476217849844, guid: 6da9c0add7ba7c9478a6878dc06428df, type: 3}
+  - {fileID: 5262651476217849844, guid: ca6c409b735af9b4090d5e8340fa5ff2, type: 3}
+  isPistol: 0
 --- !u!1 &1509395381219293365
 GameObject:
   m_ObjectHideFlags: 0

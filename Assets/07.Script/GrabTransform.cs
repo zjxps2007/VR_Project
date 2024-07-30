@@ -17,13 +17,13 @@ public class GrabTransform : MonoBehaviour
 
     void Update()
     {
-        if (grabbable.isGrabbed && grabbable.grabbedBy.GetController() == OVRInput.Controller.LTouch)
+        if (grabbable.grabbedBy.GetController() == OVRInput.Controller.LTouch)
         {
             Debug.Log(grabbable.grabbedBy);
             this.grabbable.swapOffset(OffsetList[0]);
             Debug.Log("왼손");
         }
-        else if (grabbable.isGrabbed)
+        else
         {
             Debug.Log(grabbable.grabbedBy);
             this.grabbable.swapOffset(OffsetList[1]);
