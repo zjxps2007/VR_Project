@@ -1982,6 +1982,7 @@ GameObject:
   - component: {fileID: 620948609}
   - component: {fileID: 620948608}
   - component: {fileID: 620948611}
+  - component: {fileID: 620948612}
   m_Layer: 5
   m_Name: CreationGunCanvas
   m_TagString: Untagged
@@ -2076,6 +2077,24 @@ MonoBehaviour:
     m_Bits: 32
   pointer: {fileID: 0}
   sortOrder: 0
+--- !u!114 &620948612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620948606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe96d7ce5cbf8f7439598d6aca70a208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttonM1911: {fileID: 1783556132}
+  _buttonPistol: {fileID: 1217863110}
+  m1911: {fileID: 1509269160459299381, guid: 63a2058cc714b7745bcbb962270db69a, type: 3}
+  pistol: {fileID: 3261833995122496305, guid: c6d3ec068235b3042af43bb1dc54b1d8, type: 3}
+  m1911SpawnPoint: {fileID: 1932487146}
+  pistolSpawnPoint: {fileID: 1881172477}
 --- !u!1 &748207946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3925,12 +3944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ccfe748bf653d458b28294006ce7da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonM1911: {fileID: 1783556132}
-  _buttonPistol: {fileID: 1217863110}
-  m1911: {fileID: 1509269160459299381, guid: 63a2058cc714b7745bcbb962270db69a, type: 3}
-  pistol: {fileID: 3261833995122496305, guid: c6d3ec068235b3042af43bb1dc54b1d8, type: 3}
-  m1911SpawnPoint: {fileID: 1932487146}
-  pistolSpawnPoint: {fileID: 1881172477}
 --- !u!1 &1839520125
 GameObject:
   m_ObjectHideFlags: 0

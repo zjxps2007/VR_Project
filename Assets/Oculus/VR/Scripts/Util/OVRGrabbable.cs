@@ -171,4 +171,9 @@ public class OVRGrabbable : MonoBehaviour
             m_grabbedBy.ForceRelease(this);
         }
     }
+    
+    public void swapOffset(Transform t)
+    {
+        m_snapOffset = t;
+    }
 }

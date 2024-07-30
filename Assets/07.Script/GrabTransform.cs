@@ -1,28 +1,32 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GrabTransform : MonoBehaviour
 {
-    [SerializeField] private OVRGrabbable _grabbable;
-    
-    // Start is called before the first frame update
+    [SerializeField] private OVRGrabbable grabbable;
+    public Transform[] OffsetList = new Transform[2];
+    //0 = Left, 1 = Right
+    public bool isPistol;
+
     void Start()
     {
-        _grabbable = GetComponent<OVRGrabbable>();
+        grabbable = this.GetComponent<OVRGrabbable>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (_grabbable.grabbedBy.GetController() == OVRInput.Controller.LTouch)
+        if (grabbable.isGrabbed && grabbable.grabbedBy.GetController() == OVRInput.Controller.LTouch)
         {
-            this.transform.rotation = Quaternion.Euler(0, 0, -90);
+            Debug.Log(grabbable.grabbedBy);
+            this.grabbable.swapOffset(OffsetList[0]);
             Debug.Log("왼손");
         }
-        else
+        else if (grabbable.isGrabbed)
         {
-            this.transform.rotation = Quaternion.Euler(0, 180, -90);
+            Debug.Log(grabbable.grabbedBy);
+            this.grabbable.swapOffset(OffsetList[1]);
             Debug.Log("오른손");
         }
     }
